@@ -1,0 +1,113 @@
+.accountWrapper {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+.settingItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.settingItem label {
+    font-weight: bold;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.inputField,
+.selectField {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.changeButton {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff5100;
+    color: white;
+    cursor: pointer;
+}
+
+.changeButton:hover {
+    background-color: #c82333;
+}
+
+.actionButtons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.deleteButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+}
+
+.deleteButton:hover {
+    background-color: #c82333;
+}
+
+.emailDisplay {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    flex-grow: 1;
+}
+
+.emailDisplay span {
+    padding: 8px;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.emailInputGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.emailInputGroup input {
+    flex-grow: 1;
+}
+
+.saveButton,
+.cancelButton {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.saveButton {
+    background-color: #ff5100;
+    color: white;
+}
+
+.saveButton:hover {
+    background-color: #e64a00;
+}
+
+.cancelButton {
+    background-color: #cccccc;
+    color: white;
+}
+
+.cancelButton:hover {
+    background-color: #b3b3b3;
+}

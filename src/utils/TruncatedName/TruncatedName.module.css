@@ -1,0 +1,7 @@
+.truncatedName {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    margin: 0 auto;
+}

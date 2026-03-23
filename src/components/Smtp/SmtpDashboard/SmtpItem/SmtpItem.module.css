@@ -1,0 +1,216 @@
+.smtpItemContainer {
+  padding: 24px;
+  margin: 16px 0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.smtpItemContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.smtpId {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff5100;
+  margin: 0 0 16px;
+}
+
+.smtpItemContainer p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.statusText {
+  font-weight: bold;
+  color: #ff5100;
+}
+
+.editButton,
+.saveButton,
+.cancelButton {
+  padding: 12px 24px;
+  margin-top: 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.editButton,
+.saveButton {
+  background-color: #ffffff;
+  color: #ff5100;
+  border: 2px solid #ff5100;
+}
+
+.editButton:hover,
+.saveButton:hover {
+  background-color: #ff5100;
+  color: #ffffff;
+}
+
+.cancelButton {
+  border: 2px solid #ccc;
+  background-color: #f0f0f0;
+  color: #555;
+  margin-left: 12px;
+}
+
+.cancelButton:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+  pointer-events: auto; 
+}
+
+.editModal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  transform: translateY(-50px);
+  pointer-events: auto;
+}
+
+.editSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.editTitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0 0 16px;
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.formGroup input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input[type="number"]:focus {
+  border-color: #ff5100;
+  outline: none;
+}
+
+.radioGroup {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.radioGroup p {
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+  width: 100%;
+}
+
+.radioGroup label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-weight: 400;
+  color: #555;
+  user-select: none;
+}
+
+.radioGroup label input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radioCustom {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.radioGroup label:hover .radioCustom {
+  background-color: #f0f0f0;
+}
+
+.radioCustom::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  background-color: #ff5100;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.radioGroup label input[type="radio"]:checked ~ .radioCustom {
+  border-color: #ff5100;
+}
+
+.radioGroup label input[type="radio"]:checked ~ .radioCustom::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.message {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.success {
+  background-color: #e6f7ea;
+  color: #28a745;
+  border: 1px solid #28a745;
+}
+
+.error {
+  background-color: #fcebeb;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}

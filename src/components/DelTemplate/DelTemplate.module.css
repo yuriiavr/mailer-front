@@ -1,0 +1,145 @@
+input::placeholder {
+  font-family: "Bebas Neue", sans-serif; 
+  color: #999; 
+  font-size: 14px;
+  font-weight: normal; 
+}
+
+
+input::-moz-placeholder {
+  font-family: "Bebas Neue", sans-serif;
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  font-family: "Bebas Neue", sans-serif;
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+}
+/* components/DelTemplate.module.css */
+
+.cont {
+    width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #555;
+}
+
+.label span {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.label input,
+.templateSelect {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.label input:focus,
+.templateSelect:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.templateSearchContainer {
+    position: relative;
+    width: 100%;
+}
+
+.templateDropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.templateDropdown .dropdownItem {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.templateDropdown .dropdownItem:hover {
+    background-color: #f0f0f0;
+}
+
+.templateDropdown .noResults {
+    padding: 10px 15px;
+    color: #888;
+    font-style: italic;
+}
+
+.deleteButton {
+    background-color: #ff5100;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.deleteButton:hover {
+    background-color: #e64900;
+}
+
+.deleteButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.selectedTemplateInfo {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    color: #333;
+    font-size: 0.9em;
+}

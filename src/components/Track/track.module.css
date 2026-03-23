@@ -1,0 +1,93 @@
+.tableContainer {
+    margin: 20px 0;
+    padding: 0 40px 0 120px;
+  }
+  
+  .dataTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .dataTable th, .dataTable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .dataTable th {
+    background-color: #f4f4f4;
+  }
+  
+  .controlsCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .refreshButton {
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .refreshButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .loader {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  .pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .resetButton {
+    padding: 6px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .resetButton:hover {
+    background-color: #c0392b;
+  }
+  
+  .option{
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #000;
+  }
+
+  .sortButton{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .sortIcon{
+    max-width: 10px;
+    padding: 0;
+  }

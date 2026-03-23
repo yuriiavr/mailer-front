@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.central-stripes-wrapper {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50vh;
+  width: 1300px;
+  z-index: -2;
+  pointer-events: none;
+  overflow: hidden;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.02) 0px,
+
+    rgba(0, 0, 0, 0.02) 2px,
+    rgba(0, 0, 0, 0.05) 2px,
+    rgba(0, 0, 0, 0.05) 70px,
+    transparent 30px,
+    transparent 150px
+  );
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.background-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.blur-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(200px);
+  opacity: 0.5;
+}
+
+.blob-top-left {
+  width: 700px;
+  height: 700px;
+  top: -700px;
+  left: 50%;
+  transform: translate(-50%);
+  background: radial-gradient(
+    circle at 20% 20%,
+    rgba(255, 157, 100, 0.5) 0%,
+    rgba(200, 122, 50, 0.3) 50%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  filter: blur(250px);
+}
+
+.blob-center {
+  width: 500px;
+  height: 500px;
+  bottom: -400px;
+  left: 50%;
+  transform: translate(-50%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 157, 100, 0.5) 0%,
+    rgba(200, 97, 50, 0.3) 50%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  filter: blur(250px);
+  opacity: 1;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}

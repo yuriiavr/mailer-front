@@ -1,0 +1,129 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.label span {
+  margin-bottom: 10px;
+}
+
+.textareaLabel span {
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  font-family: "Bebas Neue", sans-serif;
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+input::-moz-placeholder {
+  font-family: "Bebas Neue", sans-serif;
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  font-family: "Bebas Neue", sans-serif;
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.label input {
+  border-radius: 10px;
+  border: none;
+  background-color: #f3f3f3;
+  font-size: 16px;
+  padding: 7px 15px;
+  width: 200px;
+}
+
+.textareaLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.selectStylesGeo {
+  position: relative;
+  width: 100%;
+  max-width: 230px;
+  font-family: "Bebas Neue";
+}
+
+.selectStylesGeo input {
+  font-family: "Bebas Neue";
+}
+
+.countryDropdown {
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  width: 100%;
+  max-width: 220px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: white;
+  z-index: 100;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 4px 4px;
+  max-height: 200px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+.dropdownItem {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdownItem:last-child {
+  border-bottom: none;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
+
+.editor {
+  font-family: '"Fira code", "Fira Mono", monospace';
+  font-size: 12px;
+  min-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  border: none;
+  padding: 10px;
+}

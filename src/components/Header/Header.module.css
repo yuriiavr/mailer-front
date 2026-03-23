@@ -1,0 +1,91 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    width: 80%;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.logoCont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #ff5100;
+}
+
+.linkImg{
+   
+}
+
+.navigation{
+    display: flex;
+    gap: 30px;
+}
+
+.button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button img{
+    width: 30px;
+}
+
+.addBtn{
+    position: relative;
+}
+
+.addCont{
+    position: absolute;
+    top: 50px;
+    left: -60%;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 600;
+    row-gap: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 150px;
+    text-align: center;
+}
+
+.link{
+    color: rgb(75 85 99);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.link:focus, .link:hover{
+    color: #ff5100;
+}
+
+.activeLink {
+  color: #ff5100;
+}
+
+.profileIconLink{
+    margin-right: 20px;
+}
+
+.authSection{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    fill: #000 
+}
+
+.icon:hover, .icon:focus{
+    fill: #ff5100
+}

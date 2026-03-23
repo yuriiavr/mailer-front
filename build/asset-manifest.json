@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/malling/static/css/main.783239f1.css",
+    "main.js": "/malling/static/js/main.9e6a3d45.js",
+    "static/js/453.ca8cd0fc.chunk.js": "/malling/static/js/453.ca8cd0fc.chunk.js",
+    "static/media/ConcertOne-Regular.ttf": "/malling/static/media/ConcertOne-Regular.f001b16875de1dd86e72.ttf",
+    "static/media/BebasNeue-Regular.ttf": "/malling/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "static/media/logout.svg": "/malling/static/media/logout.78756d0429c5bbe1d031b56d26a95b8e.svg",
+    "index.html": "/malling/index.html",
+    "static/media/user.svg": "/malling/static/media/user.1c7854ae8be5bc2821d3c11b0b7feaef.svg",
+    "main.783239f1.css.map": "/malling/static/css/main.783239f1.css.map",
+    "main.9e6a3d45.js.map": "/malling/static/js/main.9e6a3d45.js.map",
+    "453.ca8cd0fc.chunk.js.map": "/malling/static/js/453.ca8cd0fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.783239f1.css",
+    "static/js/main.9e6a3d45.js"
+  ]
+}

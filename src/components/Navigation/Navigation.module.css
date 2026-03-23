@@ -1,0 +1,18 @@
+.navCont{
+    display: flex;
+}
+
+.page{
+    text-align: start;
+    color: #ff5100;
+    font-family: 'Rubik';
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.slash{ 
+    color: #ff5100;
+    font-family: 'Rubik';
+    font-size: 28px;
+    margin: 0 10px;
+}

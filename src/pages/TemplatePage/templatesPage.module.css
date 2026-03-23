@@ -1,0 +1,234 @@
+.container {
+  color: #111;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 15px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(75 85 99);
+}
+
+.createBtn {
+  background-color: #ff5100;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.createBtn:hover {
+  opacity: 0.9;
+}
+
+.tableWrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.table td {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.row:hover {
+  background-color: #2a2a2a;
+}
+
+.row:hover td{
+    color: #fff;
+}
+
+.templateName {
+  font-weight: 500;
+  color: #111;
+}
+
+.geoBadge {
+  background-color: #3d3d3d;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.previewBtn, .editBtn, .deleteBtn {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: transform 0.1s;
+}
+
+.previewBtn:active, .editBtn:active, .deleteBtn:active {
+  transform: scale(0.95);
+}
+
+.previewBtn {
+  background-color: #4a4a4a;
+  color: #e0e0e0;
+}
+
+.editBtn {
+  background-color: #ff5100;
+  color: white;
+}
+
+.deleteBtn {
+  background-color: #cc0000;
+  color: white;
+}
+
+.previewBtn:hover {
+  background-color: #555;
+}
+
+.editBtn:hover {
+  background-color: #e64900;
+}
+
+.deleteBtn:hover {
+  background-color: #b30000;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.searchWrapper {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #ff5100;
+}
+
+.clearSearch {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+}
+
+.perPageSelector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.pageNumbers {
+  display: flex;
+  gap: 5px;
+}
+
+.pageBtn, .arrowBtn {
+  min-width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #444;
+  transition: all 0.2s;
+}
+
+.pageBtn:hover, .arrowBtn:hover:not(:disabled) {
+  border-color: #ff5100;
+  color: #ff5100;
+}
+
+.activePage {
+  background-color: #ff5100 !important;
+  border-color: #ff5100 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.arrowBtn {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.arrowBtn:disabled {
+  background: #f9f9f9;
+  color: #ccc;
+  cursor: not-allowed;
+}

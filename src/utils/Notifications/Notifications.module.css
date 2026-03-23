@@ -1,0 +1,150 @@
+.notificationContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.notification {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 250px;
+  max-width: 350px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  pointer-events: auto;
+  animation: fadeInOut 0.5s ease-in-out;
+}
+
+.notification.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.notification.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 15px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.closeButton:hover {
+  opacity: 1;
+}
+
+.confirmationOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.confirmationDialog {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.confirmationMessage {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.confirmationButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.saveButton,
+.cancelButton,
+.confirmButton {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.saveButton {
+  background-color: #ff5100;
+  color: white;
+}
+
+.saveButton:hover {
+  background-color: #e64a00;
+}
+
+.cancelButton {
+  background-color: #cccccc;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #b3b3b3;
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.confirmInput {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.confirmButton {
+  background-color: #ff5100;
+  color: white;
+}
+
+.confirmButton:hover {
+  background-color: #e64a00;
+}
