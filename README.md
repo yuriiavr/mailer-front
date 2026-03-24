@@ -45,12 +45,7 @@ A centralized hub for managing mailing resources:
 
 ## 📥 Getting Started
 
-### 1. Clone the repository
-```bash
-git clone [https://github.com/your-username/email-sender.git](https://github.com/your-username/email-sender.git)
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 
 ```bash
 # Install server dependencies
@@ -60,7 +55,7 @@ npm install
 cd client && npm install
 ```
 
-### 4. Run the Application
+### 2. Run the Application
 
 ```bash
 # Run both server and client (if using concurrently)
