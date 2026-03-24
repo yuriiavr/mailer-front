@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# 🚀 Full-Stack Email Marketing Engine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-## Available Scripts
+**EmailSender** is a high-performance platform for automated email campaigns and mail infrastructure management. Engineered with a focus on scalability, message queuing, and granular control over SMTP server health.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🏗 Architectural Highlights
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> **Note:** The core of the system leverages **Redis** for asynchronous message queuing. This ensures the main application remains non-blocking even when processing thousands of emails simultaneously.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✨ Key Features
 
-### `npm test`
+#### 🖥 SMTP Infrastructure Dashboard
+A centralized hub for managing mailing resources:
+* **Dynamic SMTP Management:** Add and configure multiple custom SMTP accounts.
+* **Smart Rate Limiting:** Define `Daily Limits` for each server to prevent blacklisting.
+* **Real-time Status Monitoring:** Live tracking of server health: `FREE`, `BUSY`, `STOPPED`, and automatic `BAN` detection.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### ⏱ Redis-Powered Scheduler
+* **Asynchronous Processing:** Background email dispatching via Redis queues.
+* **Scheduled Sending:** Set exact dates and times for campaigns using persistent jobs.
+* **Fault Tolerance:** Guaranteed queue processing even after server restarts.
 
-### `npm run build`
+#### 📊 Advanced Analytics
+* **Delivery Tracking:** Real-time status updates for every single email sent.
+* **Open Rate Monitoring:** User engagement tracking via embedded **tracking pixels**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React, React Router, Tailwind CSS |
+| **Backend** | Node.js, Express |
+| **Queue/Cache** | Redis (Bull.js / Better-queue) |
+| **Database** | MongoDB / PostgreSQL |
+| **Protocols** | SMTP, REST API |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📥 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Clone the repository
+```bash
+git clone [https://github.com/your-username/email-sender.git](https://github.com/your-username/email-sender.git)
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Install Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Install server dependencies
+npm install
 
-## Learn More
+# Install client dependencies
+cd client && npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Run the Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+# Run both server and client (if using concurrently)
+npm start
+```
